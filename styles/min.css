@@ -1,0 +1,252 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  background:url('../images/phone.jpg') repeat-y fixed top center;
+
+}
+#frontwrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+a{
+  text-decoration: none;
+}
+#header{
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 25vh;
+  overflow: visible;
+}
+#logo{
+  font-family: 'Chewy', cursive;
+  color: gold;
+  font-size: 7.5vw;
+  display: block;
+  width: 40%;
+  margin-left: 7%;
+  margin-top: 5vh;
+}
+nav{
+  position: relative;
+  margin-top: 5vh;
+  width: 53%;
+  display: block;
+}
+#menuicon{
+  padding: 5px;
+  float: right;
+  position: relative;
+  right: 20%;
+  top: 10px;
+  width: 20%;
+  display: block;
+}
+#menuicon:hover{
+  cursor: pointer;
+}
+#menuicon span{
+  float: right;
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid white;
+  margin-top: 10px;
+}
+#menuicon.callaps span:nth-child(2){
+  transform:rotate(45deg);
+  transition:all 0.3s;
+}
+#menuicon.callaps span:nth-child(1){
+  transform:rotate(-45deg) translate(-25% , 8px);
+  transition:all 0.3s;
+}
+#menuicon.callaps span:nth-child(3){
+  width: 0;
+}
+#header nav ul{
+  float: right;
+  z-index: 500;
+  position: relative;
+  right: 0;
+  top :0px;
+  margin-top: 30px;
+  display: none;
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0,0,0,0.9);
+  list-style: none;
+}
+#header ul li{
+  display: block;
+  width: 100%;
+  height:35px; 
+  margin-top: 2vh;
+  text-align: center;
+}
+#header ul li a{
+  display: block;
+  width: 100%;
+  font-size: 4.5vw;
+  color: white;
+}
+#header ul li.active{
+  background-color: rgba(0,0,0,1);
+}
+#header ul li.active a{
+  color: gold;
+}
+#slogon,#content{
+  z-index: 0;
+  position: absolute;
+  top: 30vh;
+  left: 10%;
+  display: block;
+  width: 80%;
+}
+#slogon p{
+  z-index: 0;
+  display: block;
+  color: white;
+  font-size: 4.8vw;
+}
+
+#content{
+  margin: 0px;
+  left: 0;
+  margin-left: 5%;
+  color: white;
+  width: 90%;
+  top: 15vh;
+}
+#content h2{
+  font-weight: bold;
+  font-size: 5.5vw;
+}
+#content a{
+  padding: 5px;
+  display: block;
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+  color: yellow;
+  font-size: 4.5vw;
+}
+#content h3{
+  font-size: 5vw;
+  color: rgb(220,224,224);
+}
+#content .block{
+  margin-top: 5px;
+  border-bottom: 2px white dashed;
+}
+#content .block:last-child{
+  border-bottom: 0px white dashed;
+  margin-bottom: 30px;
+}
+#content .block p{
+  font-size: 4vw;
+}
+footer{
+  text-align: right;
+  padding-right: 20px;
+  width: 100%;
+  color: white;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+
+@media (min-width: 550px) {
+body{
+  background:url('../images/sky.jpeg') no-repeat fixed top center;
+  background-size: cover;
+  
+}
+#logo{
+  font-size: 6vw;
+}
+#menuicon{
+  width: 10%;
+}
+#menuicon span{
+  margin-top: 16px;
+}
+#menuicon.callaps span:nth-child(1){
+  transform:rotate(-45deg) translate(-18% , 13px);
+}
+#header ul li{
+  height:45px; 
+  margin-top: 6vh;
+}
+#header ul li:hover a{
+  background-color: rgba(0,0,0,1);
+  color: gold;
+  transition:all 0.3s;
+}
+#header ul li a{
+  font-size: 4vw;
+}
+#slogon,#content{
+  z-index: 0;
+  position: absolute;
+  top: 30vh;
+  left: 10%;
+  display: block;
+  width: 60%;
+}
+#slogon p{
+  z-index: 0;
+  display: block;
+  color: white;
+  font-size: 3vw;
+}
+#content{
+  left: 0;
+  margin-left: 10%;
+  width: 80%;
+  top: 20vh;
+}
+
+#content h2{
+  font-size: 4vw;
+}
+#content a{
+  width: 100%;
+  background-color: transparent;
+  padding: 0px;
+  font-size: 3vw;
+}
+#content a:hover{
+  color: black;
+  background-color: rgba(200,200,200,0.5);
+}
+#content a.button{
+  width: 25%;
+}
+#content h3{
+  font-size: 2.3vw;
+}
+#content .block{
+  padding: 10px;
+  margin-top: 5px;
+  border-bottom: 0px white dashed;
+  background-color: rgba(0,0,0,0.5);
+}
+#content .block:last-child{
+  border-bottom: 0px white dashed;
+  margin-bottom: 25px;
+}
+#content .block p{
+  font-size: 1.8vw;
+}
+
+}
+
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>VICKEN'S EDA STUDY BLOG--Blogs</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../styles/min.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="../js/main.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="../images/favicon.png"> -->
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id='frontwrapper'>
+      <header id="header" class="row">
+        <a href="/" title="Vicken's Portfolio" id="logo" class='u-pull-left'>Vicken Liu</a>
+        <nav class='u-pull-right'>
+          <div id='menuicon' class=''>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul>
+            <li><a href="/" title="Home">ME</a></li>
+            <li class="active"><a href="blog-template.html" title="Blogs">BLOGS</a></li>
+            <li><a href="http://vickenliu.com/test/" title="Contact">CONTACTS</a></li>
+          </ul>
+        </nav>
+      </header><!-- /header -->
+  </div>
+  <section class='row' id='content'>
+    <div class=''>
+      <h2>T5-PROBLEM-SOLVING --<small>12/2/2016</small></h2>
+      <a href="blog-template.html" class="button">RETURN</a>
+      <article>
+        <div class='row columns'>
+            <div class='five columns block'>
+                <h3>What was the problem?</h3>
+                <p>
+                  It was when i worked on last week's assignmet of freecodecamp.I was blocked at task 98,I could achieve all the required functions.because of messsing up the control flow.
+                </p>
+            </div>
+            <div class='seven columns block'>
+                <h3>What problem solving techniques did you use?</h3>
+                <p>
+                  I used Crome Dev tool to console.log and inspect the function running flow.and noticed the nested loop was excused once only, because i used return when the condition is true. while i mean to break the current loop to the next round. return is just stop the function and return.
+                </p>
+            </div>
+        </div>
+
+        <div class='row block'>
+            <h3>How did you feel throughout the process?</h3>
+            <p>
+              I messed up the control flow, becuase i know clear how it should work out, but cant figure out why the code is not running in the way it should be, until i realize the return jump out the function straight away. Wasted some time, and feel frustrated. Get a bit crazy and should take some rest and then go back with clear mind.
+            </p>
+        </div>
+        <div class='row block'>
+            <h3>What did you learn?</h3>
+            <p>
+              When we get stuck on something, we could put it aside,and do something else, or take enough break, when the brain is calmed down enough, we go back to the problem, also put down on the page how should every step work, analyze bit by bit. we will fix the problem eariler and clearer.
+            </p>
+        </div>
+        <div class='row block'>
+            <h3>Reflection of problem solving techniques and process</h3>
+            <p>
+              I am still trying to get more familiar with Psuedocode. I am very happy to try things out, and play around with the techniques.Reading error messages and console log, google are the common basic ways for me to solve a problem. also i d like to work with team to discuss for help.
+            </p>
+        </div>
+        <div class='row block'>
+            <h3>The differences of map(), filter(), reduce()</h3>
+            <p>
+              map() is an array function to process the every single data stored in the array with the provided specific method passed to the map function. and the every individul data will be passed to the specific method,the method return a processed data to a new array.<br/>
+              filter() is an array function as well, similar with map(), there will be a method passed to the filter() function, the individul data in the array passed to the method, usually the method return a boolean value, only the data proccessed by the method return true will be kept in the array.<br/>
+              reduce() is array function too, The reduce() method applies a function/method against an accumulator and each value of the array (from left-to-right) to reduce it to a single value. the final result of reduce() is return one value result. to achieve this, there are 2 parameters for reduce(), one is method, one is optional initialvalue. every data processed by the method return a value will be the next initialvalue or prev value passed to the method. for the method, we pass in initial value and current value which is the data in the array. the method will excused agaist each value of the array and the final excusion on the last data of the array will return the result for reduce() function.
+            </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    @Vicken Liu's Assignments blog
+  </footer>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>VICKEN'S EDA STUDY BLOG--Blogs</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../styles/min.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="../js/main.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="../images/favicon.png"> -->
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id='frontwrapper'>
+      <header id="header" class="row">
+        <a href="/" title="Vicken's Portfolio" id="logo" class='u-pull-left'>Vicken Liu</a>
+        <nav class='u-pull-right'>
+          <div id='menuicon' class=''>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul>
+            <li><a href="/" title="Home">ME</a></li>
+            <li class="active"><a href="blog-template.html" title="Blogs">BLOGS</a></li>
+            <li><a href="http://vickenliu.com/test/" title="Contact">CONTACTS</a></li>
+          </ul>
+        </nav>
+      </header><!-- /header -->
+  </div>
+  <section class='row' id='content'>
+    <div class=''>
+      <h2>T8-SCOPING --<small>5/3/2016</small></h2>
+      <a href="blog-template.html" class="button">RETURN</a>
+      <article>
+        <div class='row block'>
+            <h3> What 'scope' is, and how it works in javascript</h3>
+            <p>
+              'Scope' from the word we know it defines a certain area or demension if you call it.<br>
+              In Javascript, the main idea of scope is that we used to claim varaible or method's activity area, those defined varaibles or methods are only valid in their according scope. Computer can not retrieve them out of their scope.<br> 
+              Like laws as varaibles, we have state-grade laws and province-grade laws, even towns-grade laws/rules. the laws defined state-grade can be reached by all of children-scopes defined within the country. But from the country-level, we can not get or use the province/town level laws. because those children-scope leveled laws only available within their own scope.same rules for province and towns's relationship. provincal laws are available to towns,but towns laws are only reachable within town. and so on so forth.<br>
+              Another very important rule is, if there are the same named laws with in the state and children-level area, the children-scope law will effect to the local area not the state or parent-level's law. which is propabely totally different with the real reality. But in javascript that is how it works.<br>
+              In javascript,if we say whole js file as a country. we have global scope which is like the whole country, and then we may have lots of defined functions within which we also can define its own variables , they are only availbe within the function scope.out of the function,we can't retieve them. Variables defined in a function belongs to their direct parent function's scope.<br>
+              In javascript, we only have 2 ways of scopes, global area, and function-area scope.There is no block level scope within this version's js.
+            </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    @Vicken Liu's Assignments blog
+  </footer>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+
+
+
+

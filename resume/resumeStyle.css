@@ -1,0 +1,157 @@
+*{
+	box-sizing:border-box;
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1;
+}
+
+body{
+	width: 100%;
+}
+header{
+	text-align: center;
+	width: 100%;
+	padding: 0;
+}
+#logo{
+	display: block;
+	line-height: 40px;
+	margin: 20px;
+}
+header h2{
+	color: gold;
+	margin: 0px;
+}
+#bio{
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+}
+#bio ul li{
+	font-size: 1em;
+	list-style: none;
+	text-align: left;
+	display: inline-block;
+	float: left;
+	margin-bottom: 15px;
+}
+#bio ul li:last-child{
+	display: block;
+}
+#education,#work{
+	width: 100%;
+	clear: both;
+	padding: 5px 15px;
+	background-color: gray;
+}
+.educationRecord,.projectsRecord,.workRecord{
+	margin:10px 0px;
+	padding: 5px;
+	background-color: #eee;
+}
+#education h2,#projects h2,#work h2{
+
+
+}
+.educationRecord h3,.projectsRecord h3,.workRecord h3{
+	font-size: 1em;
+	margin: 5px;
+}
+
+#projects{
+	width: 100%;
+	padding: 5px 15px;
+}
+.projectRecord{
+	background-color: gray;
+}
+
+@media (min-width: 550px){
+body{
+	width: 85%;
+	margin: 0px auto;
+	background-color: #fff;
+}
+#logo{
+	display: block;
+	line-height: 50px;
+}
+header h2{
+	margin: 5px;
+}
+#bio ul{
+	width: 100%;
+	display: block;
+	margin: 5px auto;
+}
+#bio ul li{
+	font-size: 1.2em;
+	margin-left: 20px;
+}
+#bio ul li:last-child{
+	display: block;
+}
+#education,#work{
+	width: 100%;
+	clear: both;
+	padding: 5px 15px;
+	background-color: gray;
+}
+.educationRecord,.project,.workhistory{
+	display: block;
+	width: 98%;
+	margin:5px 1%;
+	padding: 10px;
+}
+#education h2,#projects h2,#work h2{
+margin-left: 5%;
+
+}
+.educationRecord h3,.project h3,.workhistory h3{
+	font-size: 1.2em;
+}
+.educationRecord h3 strong{
+	font-size: 1.1em;
+}
+#projects{
+	background-color: #aaa;
+}
+}
+@media (min-width : 1024px) {
+body{
+	width: 80%;
+}
+#bio ul li{
+	font-size: 1.28em;
+}
+#bio ul li:last-child{
+	display: block;
+}
+.educationRecord,.project,.workhistory{
+	display: block;
+	width: 98%;
+	margin:10px 1%;
+	padding: 10px;
+}
+#education h2,#projects h2,#work h2{
+margin-left: 7%;
+
+}
+.educationRecord h3,.project h3,.workhistory h3{
+	font-size: 1.3em;
+}
+.educationRecord h3 strong{
+	font-size: 1.1em;
+}
+#projects{
+	background-color: #aaa;
+}
+}
