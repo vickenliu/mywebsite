@@ -2,3 +2,6 @@
 *.DS_Store
 
 *.babelrc
+images/
+node_modules
+*.log
